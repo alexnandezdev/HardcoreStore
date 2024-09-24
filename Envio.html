@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>cla</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <body>
+    <head>
+        <div class="compra">
+            <div class="row justify -content-between mb-5">
+                <nav class="navbar navbar - expand -md navbar- dark fixed -top bg-dark">
+                    <a class="navbar-brand"href="index.html"><img src="images/hardcore store (2).gif" height="100" width="100"></a>
+                    <button class="navbar-toggler"type="button"data-toggle="collapse"data-target="navbar-collapse"
+                    aria-controls="navbar-collapse" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </nav>
+            </div>
+        </div>
+
+    </head>
+
+    <br>
+
+    <main>
+        <div class="container">
+            <div class="row mt-3 ">
+                <h2 class="d-flex justify-content-center mb -3">Datos de envio</h2>
+            
+                
+            </div>
+                <form id="procesar-pago" action="#"method="post">
+                    
+                    <div class="form-group row">
+                        <label for="cliente"class="col-md-2 col-form-label h2">Cliente</label>
+                        <div class="col-12 col-md-10">
+                            <input type="text" class="form-control" id="cliente"
+                            placeholder="ingresa nombre cliente"name="destinatario">
+                        </div>
+                    </div>
+                        <label for="numero telefonico"class="col-md-2 col-form-label h2">Telofono</label>
+                        <div class="col-12 col-md-10">
+                           <input type="text" class="form-control" id="cliente"
+                           placeholder="ingresa tu numero telefonico"name="contacto">
+                        </div>
+
+                    </div>
+                    <label for="direccion"class="col-md-2 col-form-label h2">Direccion</label>
+                    <div class="col-12 col-md-10">
+                       <input type="text" class="form-control" id="cliente"
+                       placeholder="ingresa tu direccion"name="ubicacion">
+                    </div>
+
+                </div>
+                <label for="fecha de envio"class="col-md-2 col-form-label h2">fecha</label>
+                <div class="col-12 col-md-10">
+                   <input type="text" class="form-control" id="cliente"
+                   placeholder="que dia deseas el pedido"name="fecha">
+                </div>
+
+            </div>
+            <label for="horario"class="col-md-2 col-form-label h2">horario</label>
+            <div class="col-12 col-md-10">
+               <input type="text" class="form-control" id="cliente"
+               placeholder="elige horario entre 7:00am a 4:00"name="contacto">
+            </div>
+               
+                        
+                    </div>
+                    <div class="row justify-content-center" id="loader">
+                        <img id="cargando" src="images/giphy 4.gif" width="220">
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-md-4 col-md-2">
+                            <a href="Catalogo computador.html"class="btn btn-info btn-bolck">deseas hacer otro pedido</a>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <button href="#" class="btn btn-success btn-block" id="procesar-compra">confirmar datos de pedido</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+  </body>

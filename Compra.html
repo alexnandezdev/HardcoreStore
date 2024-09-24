@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>cla</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <body>
+    <head>
+        <div class="compra">
+            <div class="row justify -content-between mb-5">
+                <nav class="navbar navbar - expand -md navbar- dark fixed -top bg-dark">
+                    <a class="navbar-brand"href="index.html"><img src="images/hardcore store (2).gif" height="100" width="100"></a>
+                    <button class="navbar-toggler"type="button"data-toggle="collapse"data-target="navbar-collapse"
+                    aria-controls="navbar-collapse" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </nav>
+            </div>
+        </div>
+
+    </head>
+
+    <br>
+
+    <main>
+        <div class="container">
+            <div class="row mt-3 ">
+                <h2 class="d-flex justify-content-center mb -3">Realizar compra</h2>
+            
+                
+            </div>
+                <form id="procesar-pago" action="#"method="post">
+                    
+                    <div class="form-group row">
+                        <label for="cliente"class="col-md-2 col-form-label h2">Cliente</label>
+                        <div class="col-12 col-md-10">
+                            <input type="text" class="form-control" id="cliente"
+                            placeholder="ingresa nombre cliente"name="destinatario">
+                        </div>
+                    </div>
+                        <label for="correo electronico"class="col-md-2 col-form-label h2">Correo electronico</label>
+                        <div class="col-12 col-md-10">
+                           <input type="text" class="form-control" id="cliente"
+                           placeholder="ingresa tu correo"name="cc_to">
+                        </div>
+                </div>
+                <div class="form-group row">
+                    <div id="carrito" class="form-group table-responsive">
+                        <table class="table" id="lista de compras">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Sub total</th>
+                                    <th scope="col">Eliminar</th>
+                                </tr>
+                            </thead>
+                         <!-- tbody es para ir agregando los productos seleccionados-->
+                         <tbody>
+                        </tbody>
+
+                            <tr>
+                                <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                                <th scope="col">
+                                    <p id="subtotal"></p>
+                                </th>
+                                <th colspan="4" scope="col" class="text-right">IVA :</th>
+                                <th scope="col">
+                                    <p id="iva"></p>
+                            </tr>
+                            <tr>
+
+                                <th colspan="4" scope="col" class="text-right">TOTAL</th>
+                                <th scope="col">
+                                    <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: aliceblue;">
+                                </th>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <div class="row justify-content-center" id="loader">
+                        <img id="cargando" src="images/giphy3-unscreen.gif" width="220">
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-md-4 col-md-2">
+                            <a href="index.html"class="btn btn-info btn-bolck">Continuar comprando</a>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <button href="envio.html" class="btn btn-success btn-block" id="procesar-compra">Ir a cancelar compra</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+  </body>

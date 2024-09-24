@@ -1,0 +1,121 @@
+<!DOCTYPE html>  
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/responsive.css" />
+     <title>Catalogo Computadores</title>
+  </head>
+  <body>
+    
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="productos/compu1.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Computador Escritorio Gamer Victus HP</p>
+                    <span class="precio">$4.399.000</span>
+                    <h5> 23.8" Pulgadas TG02-0002lam - Intel Core i5 - RAM 8GB- Disco SSD 512 GB - Gris</h5>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="productos/compu2.jpeg" alt="">
+                    </div>
+                    <p class="descripcion" id>Computador All in One HP </p>
+                    <span class="precio">$ 2.119.000</span>
+                    <h5>21.5" Pulgadas dd2020la - Intel Core i3 - RAM 8GB - Disco SSD 512 GB - Negro</h5>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="productos/compu3.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Computador All In One LENOVO 
+                    </p>
+                    <span class="precio">$ 1.899.000</span>
+                    <h5>21,5" Pulgadas AIO 3 - Intel Core i3 - RAM 8GB - Disco SSD 256GB - Negro</h5>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="productos/compui4.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Computador All in One HP</p>
+                    <span class="precio">$ 1.399.000</span>
+                    <h5>21.5" Pulgadas dd2006la - Intel Celeron -</h5>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="productos/compu5.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Computador All in One ASUS</p>
+                    <span class="precio">$ 1.899.000 </span>
+                    <h5>23,8" Pulgadas V241EAK - Intel Core i3 - RAM 8GB - Disco SSD 256 GB - Negro</h5>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="productos/compu6.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Computador All In One LENOVO </p>
+                    <span class="precio">$ 1.999.000</span>
+                    <h5>23,8" Pulgadas AIO 3 - Intel Core i5 - RAM 8GB - Disco SSD 256GB - Negro</h5>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="productos/compu7.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Computador All in One HP</p>
+                    <span class="precio">$ 1.599.000</span>
+                    <h5>21.5" Pulgadas dd2011la - Intel Pentium - RAM 8GB - Disco SSD 256 GB - blanco</h5>
+                </div>
+                 </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="" alt="">
+                    </div>
+                    <p class="descripcion"></p>
+                    <span class="precio"></span>
+                    <h5></h5>
+                </div>
+                
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                 
+                    <button herf="index.html" class="btn btn-success btn-block" id="procesar-compra">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/catolgo.js"></script>
+
+    
+
+    
+  </body>
+
+
+
+</html>

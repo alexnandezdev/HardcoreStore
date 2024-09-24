@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+	background: #F0F0F0;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	background: url(../images/banner.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+
+.content {
+	height: 100px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width:900px) {
+	.container{
+		width: 100%;
+	}
+	
+	.cover-bg {
+		background: rgba(0,0,0,0.5);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+
+.o-5{
+	opacity: .5;
+}
+
+.card-layer{
+	margin: 70px auto 0;
+	display: flex;
+	width: 1000px;
+}
+
+.card-price{
+	width: 400px;
+	background: url('https://pp.userapi.com/c851524/v851524846/3f7c2/wJQx5JHXDSU.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	padding: 60px 40px;
+	margin: 20px;
+
+	> *{
+		width: calc(100% - 50px);
+	}
+
+	.hr{
+		border: 0.5px solid #44416d;
+		width: 170px;
+		margin-left: 0;
+	}
+
+	.card-mid > *{
+		margin-bottom: 40px;
+	}
+
+	.card-title{
+		font-size: 34px;
+		margin-bottom: 40px;
+		font-weight: 600;
+	}
+
+	.title{
+		font-size: 12px;
+	}
+
+	.number{
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	.suma{
+		font-size: 40px;
+		font-weight: 600;
+	}
+
+	.card-footer{
+		font-size: 10px;
+		color: #f2eff5;
+		margin-left: 15px;
+		width: calc(100% - 67px);
+	}
+
+	.ul{
+		margin: 0;
+		padding: 0;
+
+		.li + li{
+			margin-top: 15px;
+		}
+	}
+}
+
+.card-pay{
+	width: 400px;
+	background-color: #323e4d;
+	padding: 50px;
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+
+
+	.title{
+		font-size: 14px;
+		color: #fff;
+		opacity: .5;
+		margin-bottom: 15px;
+	}
+  
+  .check{
+    background: #eb6532;
+  }
+
+	.box-pay-method{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+		font-size: small;
+		
+	}
+
+	.btn-plus{
+		padding: 5px 10px;
+		background: transparent;
+		border: none;
+		color: #fff;
+		font-size: 30px;
+		cursor: pointer;
+		transition: all .2s ease-in-out;
+
+		&:focus{
+			outline: none;
+		}
+
+		&:hover{
+			color: #eb6532;
+		}
+	}
+
+	.btn-pay{
+		padding: 10px 20px;
+		background: linear-gradient(to right, rgba(113,102,238,1) 0%, rgba(70,62,111,1) 100%);
+		color: #fff;
+		border: none;
+		text-transform: uppercase;
+		border-radius: 5px;
+		font-weight: 600;
+		transition: all .2s ease-in-out;
+
+	.button:hover{
+			color: black;
+			font-size: 35px;
+			background: rgb(255,255,255,0.3);
+			box-shadow: 0px 0px 80px rgb(255,255,255,0.15);
+		}
+	}
+
+	.alert{	
+		width: 40%;
+		height: 50%;
+		font-size: 20px;
+		color: white;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		position: absolute;
+		z-index: 1;
+		border-radius: 30px;
+		box-shadow: 0px 0px 50px rgb(0,0,0,0.2);
+		background: rgb(0,0,0,0.6);
+	}
+
+	.card-mid{
+		display: flex;
+		flex-direction: column;
+		width: calc(100% - 60px);
+
+		.title{
+			margin-bottom: 0;
+		}
+
+		> * +*{
+			margin-top: 15px;
+		}
+
+		.input{
+			background-color: #212a33;
+			border: 1px solid transparent;
+			border-radius: 5px;
+			padding: 10px 15px;
+			color: #fff;
+
+			&:focus, &:hover{
+				outline: none;
+				border: 1px solid #3d444c;
+			}
+		}
+	}
+
+	.card-footer{
+		font-size: 10px;
+		display: flex;
+
+		> a + a{
+			margin-left: 10px;
+		}
+
+		> a{
+			color: #fff;
+			text-transform: uppercase;
+			opacity: .5;
+			cursor: pointer;
+
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.btn-method{
+  padding: 7px 20px;
+  background: #8a97b6;
+  border: none;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+
+  &:focus{
+    outline: none;
+  }
+
+}
+

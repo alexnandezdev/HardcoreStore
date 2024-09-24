@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />    
+    <title>HS Pagos</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="css/metodo.css" />   
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"/>
+    <script>
+      let total=0;
+      if (localStorage.getItem('total')) {
+        total = parseFloat(localStorage.getItem('total'));
+      }
+      function mostrarTotal(){
+        const totalElement = document.getElementById('total');
+        totalElement.innerText = `total: $${total}`;
+      }
+    </script>
+  </head>
+
+  <body>    
+  <body class="main-layout">
+    <header class="container">        
+    <div class="logo"><img src="images/hardcore-store-2--unscreen.gif" alt="" width="180px"></div>    
+       
+    </header>
+      <div class="card-layer">
+        <div class="card-price">
+          <div class="card-title">Checkout</div>
+          <div class="card-mid">
+            <div class="box-pay">
+              <div class="title o-5">Numero de orden</div>
+              <div class="number">342 434</div>
+            </div>
+            <hr>
+            <div class="box-pay">
+              <div class="title">Monto a pagar</div>
+              <div class="suma"><span>$ 1.500.000 </span></div>
+            </div>
+            <hr>
+          </div>
+          <div class="card-footer">
+            <ul>
+              <li>Se enviará una copia del pedido al correo y número de teléfono especificado.  </li>
+              <li>Dependiendo del método de pago elegido, se pueden cobrar tarifas del sistema de pago.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-pay">
+          <div class="card-head">
+            <div class="title">Metodo de pago</div>
+            <img src="images/metodos de pago.jpg" alt=""  width="250px">
+            <div class="box-pay-method">              
+              <select name="usuario-opcion" id="select">
+                <option disabled selected value> <h6>Por favor selecciona tu metodo de pago </h6> </option>  
+                <option value="Visa">Visa</option>
+                <option value="American express">American express</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Bancolombia">Bancolombia</option>
+                <option value="Nequi">Nequi</option>
+                <option value="PSE">PSE</option>
+                </select>
+            </label>
+             </div>
+          </div>
+          <div class="card-mid">
+            <div class="title">Tus datos:</div>
+            <input type="text" placeholder="Escribe tu nombre" required>
+            <input placeholder="Ingresa tu direccion" required>
+            <input placeholder="Ingresa tu e-mail" required>
+            <input placeholder="Ingresa tu telefono" id="phone" required>
+            <button id="btnpay" class="btn-pay">PAGAR</button>
+            <div id="alerta" class="alert"> 
+              Tu pago se ha realizado, se te enviara la confirmacion de tu pedido por medio de mensaje de texto o via E-mail !! <br>
+            Gracias por comprar en Hardcore Store!!! </div>
+            </div>
+          <div id="cardfoot" class="card-footer">
+            <a class="#">Terminos de servicio</a>
+            <a class="#">Soporte tecnico</a>
+            <p>© 2023 Hardcore Store.</p>
+          </div>
+        </div>
+      </div>
+      <script src="js/metodo.js"></script>   
+  </body>
+ </html>
+  
